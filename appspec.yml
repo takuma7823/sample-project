@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/ec2-user/project/
+    destination: /var/www/app/
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies
