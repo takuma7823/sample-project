@@ -31,4 +31,7 @@ class CallbackController extends Controller
             ]);
         return view('welcome');
      }
+     public function index2() {
+        return view('welcome');
+    }
 }

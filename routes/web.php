@@ -13,9 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
- });
+// Route::get('/', function () {
+//     return view('welcome');
+//  });
+Route::get('/', 'App\Http\Controllers\CallbackController@index2');
  Route::get('/authorize', 'App\Http\Controllers\AuthorizeController@index');
  Route::get('/callback', 'App\Http\Controllers\CallbackController@index');
 
